@@ -21,11 +21,12 @@
         </activity>
         <activity
             android:name=".ColetaActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PropriedadesActivity"
             android:label="@string/title_activity_propriedades"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>
