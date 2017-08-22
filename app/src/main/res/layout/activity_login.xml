@@ -11,8 +11,14 @@
         android:layout_height="match_parent"
         android:src="@drawable/plantt"
         android:scaleType="center"
+        android:background="#000"
+        android:alpha="0.9"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:background="#000"
         android:alpha="0.4"/>
-
     <FrameLayout
 
         android:layout_width="250dp"
@@ -21,15 +27,22 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/logo" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -48,16 +61,16 @@
             android:padding="10dp" />
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="100dp">
             <Button
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
-                android:text="Logar"
-                android:id="@+id/button"
+                android:text="Login"
+                android:id="@+id/btn_login"
                 android:textColor="#FFFFFF"
-                android:background="#445A45"/>
+                android:background="@drawable/shape_button"/>
         </RelativeLayout>
         </LinearLayout>
     </FrameLayout>
