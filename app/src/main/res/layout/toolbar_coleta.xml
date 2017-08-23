@@ -1,0 +1,63 @@
+<android.support.v7.widget.Toolbar
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_principal"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#445a45"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    app:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#445a45"
+        android:padding="10dp"
+        app:layout_collapseParallaxMultiplier="0.9">
+
+        <ImageButton
+            android:id="@+id/bt_cultura"
+            android:layout_width="@dimen/icone_dimensao"
+            android:layout_height="@dimen/icone_dimensao"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/bt_aplicar"
+            android:background="@drawable/icone_cultura_white"
+            android:backgroundTint="#445a45"
+            android:backgroundTintMode="screen"
+            android:elevation="0dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/bt_aplicar"
+            android:layout_width="@dimen/icone_dimensao"
+            android:layout_height="@dimen/icone_dimensao"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/bt_praga"
+            android:background="@drawable/icone_praga_white"
+            android:backgroundTint="#445a45"
+            android:backgroundTintMode="screen"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/bt_praga"
+            android:layout_width="@dimen/icone_dimensao"
+            android:layout_height="@dimen/icone_dimensao"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icone_praga_white"
+            android:backgroundTint="#445a45"
+            android:backgroundTintMode="screen"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
