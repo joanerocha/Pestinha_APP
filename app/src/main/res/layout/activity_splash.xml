@@ -12,14 +12,15 @@
         android:layout_height="match_parent"
         android:scaleType="center"
         android:src="@drawable/plant"
-        android:background="@drawable/background_splash" />
+        android:background="@drawable/background_splash"
+        android:alpha="0.1"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="center"
-        android:background="#000"
-        android:alpha="0.4"/>
+        android:background="#fff"
+        android:alpha="0.5"/>
 
     <ImageView
         android:id="@+id/logoSMCP"
@@ -28,31 +29,28 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/logo" />
-    <LinearLayout
-        android:layout_width="150dp"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
+
         <ImageView
             android:id="@+id/ufrn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentLeft="true"
             android:src="@drawable/ufrn" />
         <ImageView
             android:id="@+id/eaj"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_alignParentRight="true"
             android:src="@drawable/eaj" />
-        <ImageView
-            android:id="@+id/tads"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/tads" />
-    </LinearLayout>
-
-
+    </RelativeLayout>
 </RelativeLayout>

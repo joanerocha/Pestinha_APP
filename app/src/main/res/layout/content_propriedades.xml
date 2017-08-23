@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:padding="18dp"
+    android:orientation="vertical"
+    android:layout_marginTop="18dp"
     tools:context="com.example.aluno.pestinha_app.PropriedadesActivity"
     tools:showIn="@layout/activity_propriedades">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_propriedade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rectangle_white"
+        android:paddingTop="18dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prop_leg"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="9dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/prop_leg_contaminados"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="Infecção"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="17dp"
+                android:layout_toLeftOf="@+id/prop_leg_tratados"/>
+            <TextView
+                android:id="@+id/prop_leg_tratados"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="Tratamento"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
